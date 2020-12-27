@@ -1,0 +1,56 @@
+{
+ "properties": {
+  "displayName": "test2",
+  "policyType": "Custom",
+  "mode": "Indexed",
+  "metadata": {
+   "version": "1.0.0",
+   "category": "Tags",
+   "createdBy": "1727e513-cda5-4eca-a271-f23a3631fb5f",
+   "createdOn": "2020-04-23T17:13:10.4594711Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "parameters": {
+   "tagName": {
+    "type": "String",
+    "metadata": {
+     "displayName": "Tag Name",
+     "description": "Name of the tag, such as 'environment'"
+    }
+   }
+  },
+  "policyRule": {
+   "if": {
+    "allOf": [
+     {
+      "field": "[concat('tags[', parameters('tagName'), ']')]",
+      "exists": "false"
+     },
+     {
+      "value": "[resourceGroup().tags[parameters('tagName')]]",
+      "notEquals": ""
+     }
+    ]
+   },
+   "then": {
+    "effect": "modify",
+    "details": {
+     "roleDefinitionIds": [
+      "/providers/microsoft.authorization/roleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c"
+     ],
+     "operations": [
+      {
+       "operation": "add",
+       "field": "[concat('tags[', parameters('tagName'), ']')]",
+       "value": "[resourceGroup().tags[parameters('tagName')]]"
+      }
+     ]
+    }
+   }
+  }
+ },
+ "id": "/subscriptions/4ebd6bc1-f82f-4a94-999a-be613a139f7a/providers/Microsoft.Authorization/policyDefinitions/440ab2ce-3dec-4637-ab6f-df18f5359b8b",
+ "type": "Microsoft.Authorization/policyDefinitions",
+ "name": "440ab2ce-3dec-4637-ab6f-df18f5359b8b"
+}
