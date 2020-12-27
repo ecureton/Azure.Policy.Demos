@@ -1,0 +1,64 @@
+{
+ "properties": {
+  "displayName": "Inherit parent tag from resource group",
+  "policyType": "Custom",
+  "metadata": {
+   "category": "Tags",
+   "createdBy": "1727e513-cda5-4eca-a271-f23a3631fb5f",
+   "createdOn": "2020-04-23T15:14:12.4509093Z",
+   "updatedBy": "1727e513-cda5-4eca-a271-f23a3631fb5f",
+   "updatedOn": "2020-04-24T18:22:07.6780687Z"
+  },
+  "parameters": {},
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "1044176535530234624",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ea3f2387-9b95-492a-a190-fcdc54f7b070",
+    "parameters": {
+     "tagName": {
+      "value": "Project"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "6588150451432970773",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ea3f2387-9b95-492a-a190-fcdc54f7b070",
+    "parameters": {
+     "tagName": {
+      "value": "Team"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "8096629587848644037",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ea3f2387-9b95-492a-a190-fcdc54f7b070",
+    "parameters": {
+     "tagName": {
+      "value": "Owner"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "787939945516815671",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ea3f2387-9b95-492a-a190-fcdc54f7b070",
+    "parameters": {
+     "tagName": {
+      "value": "Environment"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "17821777548331089572",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ea3f2387-9b95-492a-a190-fcdc54f7b070",
+    "parameters": {
+     "tagName": {
+      "value": "CreatedOn"
+     }
+    }
+   }
+  ]
+ },
+ "id": "/subscriptions/4ebd6bc1-f82f-4a94-999a-be613a139f7a/providers/Microsoft.Authorization/policySetDefinitions/18f69971-74da-4bae-9109-a04a8a88d0a6",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "18f69971-74da-4bae-9109-a04a8a88d0a6"
+}

@@ -1,0 +1,86 @@
+{
+ "properties": {
+  "displayName": "Inherit parent tag from resource group",
+  "policyType": "Custom",
+  "description": "",
+  "metadata": {
+   "category": "Tags",
+   "createdBy": "1727e513-cda5-4eca-a271-f23a3631fb5f",
+   "createdOn": "2020-12-27T06:13:06.9999831Z",
+   "updatedBy": null,
+   "updatedOn": null,
+   "version": "2"
+  },
+  "parameters": {},
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "1044176535530234624",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ea3f2387-9b95-492a-a190-fcdc54f7b070",
+    "parameters": {
+     "tagName": {
+      "value": "Project"
+     }
+    },
+    "groupNames": [
+     "GroupTag"
+    ]
+   },
+   {
+    "policyDefinitionReferenceId": "6588150451432970773",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ea3f2387-9b95-492a-a190-fcdc54f7b070",
+    "parameters": {
+     "tagName": {
+      "value": "Team"
+     }
+    },
+    "groupNames": [
+     "GroupTag"
+    ]
+   },
+   {
+    "policyDefinitionReferenceId": "8096629587848644037",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ea3f2387-9b95-492a-a190-fcdc54f7b070",
+    "parameters": {
+     "tagName": {
+      "value": "Owner"
+     }
+    },
+    "groupNames": [
+     "GroupTag"
+    ]
+   },
+   {
+    "policyDefinitionReferenceId": "787939945516815671",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ea3f2387-9b95-492a-a190-fcdc54f7b070",
+    "parameters": {
+     "tagName": {
+      "value": "Environment"
+     }
+    },
+    "groupNames": [
+     "GroupTag"
+    ]
+   },
+   {
+    "policyDefinitionReferenceId": "17821777548331089572",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ea3f2387-9b95-492a-a190-fcdc54f7b070",
+    "parameters": {
+     "tagName": {
+      "value": "CreatedOn"
+     }
+    },
+    "groupNames": [
+     "GroupTag"
+    ]
+   }
+  ],
+  "policyDefinitionGroups": [
+   {
+    "name": "GroupTag"
+   }
+  ]
+ },
+ "id": "/providers/Microsoft.Management/managementGroups/8714a216-0445-4269-b96b-7d84bddb6da1/providers/Microsoft.Authorization/policySetDefinitions/5f1a4d9f52a54a0f99bfe2bc",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "5f1a4d9f52a54a0f99bfe2bc"
+}
