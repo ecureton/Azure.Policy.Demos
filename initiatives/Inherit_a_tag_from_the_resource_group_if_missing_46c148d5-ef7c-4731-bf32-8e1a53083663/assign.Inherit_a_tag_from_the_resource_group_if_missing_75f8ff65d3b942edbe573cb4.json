@@ -1,0 +1,32 @@
+{
+ "sku": {
+  "name": "A0",
+  "tier": "Free"
+ },
+ "properties": {
+  "displayName": "Inherit a tag from the resource group if missing",
+  "policyDefinitionId": "/subscriptions/e27ca577-907c-42a1-b366-c954354c2e94/providers/Microsoft.Authorization/policySetDefinitions/46c148d5-ef7c-4731-bf32-8e1a53083663",
+  "scope": "/subscriptions/e27ca577-907c-42a1-b366-c954354c2e94",
+  "notScopes": [],
+  "parameters": {},
+  "description": "",
+  "metadata": {
+   "assignedBy": "Edward Cureton",
+   "parameterScopes": {},
+   "createdBy": "1727e513-cda5-4eca-a271-f23a3631fb5f",
+   "createdOn": "2020-05-13T17:00:40.4895489Z",
+   "updatedBy": "1727e513-cda5-4eca-a271-f23a3631fb5f",
+   "updatedOn": "2021-02-03T20:16:16.7338187Z"
+  },
+  "enforcementMode": "Default"
+ },
+ "identity": {
+  "principalId": "0fb804c7-c68c-409d-957d-9f6180a2badc",
+  "tenantId": "8714a216-0445-4269-b96b-7d84bddb6da1",
+  "type": "SystemAssigned"
+ },
+ "id": "/subscriptions/e27ca577-907c-42a1-b366-c954354c2e94/providers/Microsoft.Authorization/policyAssignments/75f8ff65d3b942edbe573cb4",
+ "type": "Microsoft.Authorization/policyAssignments",
+ "name": "75f8ff65d3b942edbe573cb4",
+ "location": "eastus"
+}
